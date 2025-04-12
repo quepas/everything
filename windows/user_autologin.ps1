@@ -1,6 +1,9 @@
 <#
   Turn on Autologin. This code is based on the following recipe:
   URL: https://learn.microsoft.com/en-us/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon
+
+  Take into the account that this is a very unsafe way of doing things as 
+  the password is stored in plain text in the System Registry.
 #>
 # The subsequent code comes from:
 # URL: https://stackoverflow.com/a/31602095/1319478
@@ -66,3 +69,4 @@ Write-Host "Has `AutoAdminLogon` key: $has_autologon with value: $value_autologo
 Write-Host "Has `DefaultUserName` key: $has_default_user with value: $value_default_user"
 Write-Host "Has `DefaultPassword` key: $has_default_password with value: $value_default_password"
 
+Read-Host "Press ENTER to exit..."
