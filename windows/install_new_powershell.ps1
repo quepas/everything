@@ -1,3 +1,4 @@
+# Find your release here: https://github.com/PowerShell/PowerShell/releases
 $msi_url = "https://github.com/PowerShell/PowerShell/releases/download/v7.5.0/PowerShell-7.5.0-win-x64.msi"
 $target_path = "$env:USERPROFILE\Downloads\powershell.msi"
 
